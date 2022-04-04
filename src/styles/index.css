@@ -1,12 +1,204 @@
 
-/* 
+.error {
+  cursor: default;
+  display: block;
+  margin: auto;
+  background-color: rgba(255, 0, 0, 0.671);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  max-width: 320px;
+  position: absolute;
+  padding: 15px 30px;
+  top: 30px;
+  right: 30px;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.input-area {
+  position: relative;
+  height: auto;
+  margin: 50px 0;
+  padding: 15px;
+  border-radius: 5px;
+  border: 4px dashed #6d6d6d;
+}
 
-*/
+.input-area input,
+.input-area textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+}
+
+.input-area input {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.input-area textarea {
+  height: 100px;
+  font-size: 19px;
+  resize: none;
+  max-width: 90%;
+}
+
+.input-area button {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  outline: none;
+  border: 3px solid #e7e7e7;
+  background-color: #ececec;
+  height: 47px;
+  width: 47px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.input-area button:hover {
+  box-shadow: 0 0 2px 0 #c9c9c981;
+  transition: none;
+  background-color: #ececec;
+}
+
+.content-area {
+  position: relative;
+}
+
+.content-area .card {
+  list-style: none;
+  align-items: left;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  min-width: 370px;
+  max-width: 370px;
+  height: 280px;
+  max-height: 280px;
+  overflow: scroll;
+  scrollbar-width: none;
+  padding: 15px 30px;
+  padding-bottom: 30px;
+  border-radius: 8px;
+  border: 2px solid #e4e4e4;
+}
+.content-area .card::-webkit-scrollbar {
+  display: none;
+}
+
+.content-area .card .title {
+  font-size: 25px;
+  font-weight: bolder;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #0c0c0c;
+}
+
+.content-area .card .content {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 18px;
+  color: rgb(92, 92, 92)
+}
+
+.content-area .card .date {
+  padding: 0 10px;
+  height: 35px;
+  background: #ebebeb;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.content-area .card span {
+  padding-left: 5px;  
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.content-area .card button {
+  border: none;
+  width: 35px;
+  height: 35px;
+  border: 3px solid #e7e7e7;
+  background: #ebebeb;
+  outline: none;
+  border-radius: 5px;
+  line-height: 15px;
+}
+
+.content-area .card button:hover {
+  box-shadow: 0 0 2px 0 #c9c9c981;
+}
+
+.content-area .card .checkbox {
+  height: 22px;
+  width: 22px;
+  border-radius: 5px;
+  border: 3px solid #414141;
+  position: relative;
+  cursor: pointer;
+}
+
+.content-area .card .checked {
+  display: block;
+  position: absolute;
+  top: -100%;
+  left: -50%;
+}
+
+.footer {
+  font-size: 22px;
+  font-weight: bold;
+  color:#868686;
+  border: 4px dashed #6d6d6d;
+  margin-top: 20px;
+}
+
+.remaining-tasks {
+  font-size: 22px;
+  font-weight: bold;
+  color:#868686;
+  padding: 0 20px;
+  padding-top: 25px;
+}
+
+.footer-buttons {
+  padding: 15px 25px;
+}
+
+.first-button,
+.second-button {
+  outline: none;
+  border: 3px solid #e7e7e7;
+  background-color: #f0f0f0;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  margin: 5px 0;
+  color: rgb(107, 107, 107);
+  border-radius: 50%;
+  box-shadow: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.first-button:hover,
+.second-button:hover {
+  box-shadow: 0 0 2px 0 #c9c9c981;
+}
+
+.second-button {
+  margin-left: 15px;
+}
+
+.unavailable-button {
+  color:rgb(92, 92, 92);
+  cursor: not-allowed!important;
+}
